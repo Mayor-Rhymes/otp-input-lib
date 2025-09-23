@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP Stuff</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <script src="take.js" defer></script>
+    <!-- <script src="take.js" defer></script> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
@@ -24,7 +24,6 @@
             target="_blank"
             ><i data-lucide="github"></i
           ></a>
-          <!-- <a href="https://x.com/MayorX19" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> -->
         </div>
         <p>Simple OTP Input Creator</p>
         <p>Simple Abstraction on input fields for OTP input.</p>
@@ -47,6 +46,21 @@
       <a href="https://github.com/mayor-rhymes" target="_blank">Mayor-Rhymes</a>
     </p>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module">
+      import { OTPInput } from "./lib/index.js";
+      const otpParent = document.getElementById("otp-wrapper");
+      // console.log(otpParent);
+      const OTPInstance = new OTPInput({
+        target: otpParent,
+        inputLength: 6,
+        // noButton: true,
+        onValidate: () => {
+          console.log(OTPInstance.getOtp());
+        },
+      });
+
+      OTPInstance.render();
+    </script>
     <script>
       lucide.createIcons();
     </script>

@@ -1,0 +1,24 @@
+{
+  "name": "otp-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "take.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayor-Rhymes/otp-input-lib.git"
+  },
+  "keywords": ["otp-input-ui", "otp", "otp-input", "otp input", "otp-html", "otp-vanilla-js",],
+  "author": "Mayor-Rhymes",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mayor-Rhymes/otp-input-lib/issues"
+  },
+  "homepage": "https://github.com/Mayor-Rhymes/otp-input-lib#readme"
+}
